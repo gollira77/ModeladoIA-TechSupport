@@ -1,0 +1,11 @@
+[
+  {"username": "lucia.gomez",   "nombre": "Lucía Gómez",    "email": "lucia.gomez@techsupport.com.ar",   "rol": "solicitante", "area": "Ventas",                 "especialidades": ""},
+  {"username": "martin.diaz",   "nombre": "Martín Díaz",    "email": "martin.diaz@techsupport.com.ar",   "rol": "solicitante", "area": "Finanzas",               "especialidades": ""},
+  {"username": "carla.ruiz",    "nombre": "Carla Ruiz",     "email": "carla.ruiz@techsupport.com.ar",    "rol": "solicitante", "area": "Recursos Humanos",       "especialidades": ""},
+  {"username": "diego.sosa",    "nombre": "Diego Sosa",     "email": "diego.sosa@techsupport.com.ar",    "rol": "solicitante", "area": "Logística",              "especialidades": ""},
+  {"username": "ana.perez",     "nombre": "Ana Pérez",      "email": "ana.perez@techsupport.com.ar",     "rol": "solicitante", "area": "Atención al Cliente",    "especialidades": ""},
+  {"username": "jorge.medina",  "nombre": "Jorge Medina",   "email": "jorge.medina@techsupport.com.ar",  "rol": "tecnico",     "area": "Soporte Técnico",        "especialidades": "Hardware|Software|Otros"},
+  {"username": "paula.ibarra",  "nombre": "Paula Ibarra",   "email": "paula.ibarra@techsupport.com.ar",  "rol": "tecnico",     "area": "Soporte Técnico",        "especialidades": "Redes y conectividad|Infraestructura"},
+  {"username": "sergio.luna",   "nombre": "Sergio Luna",    "email": "sergio.luna@techsupport.com.ar",   "rol": "tecnico",     "area": "Soporte Técnico",        "especialidades": "Sistemas y aplicaciones|Accesos y permisos"},
+  {"username": "valeria.romero","nombre": "Valeria Romero", "email": "valeria.romero@techsupport.com.ar", "rol": "supervisor",  "area": "Soporte Técnico",        "especialidades": ""}
+]

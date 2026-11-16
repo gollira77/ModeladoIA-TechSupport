@@ -1,0 +1,26 @@
+# Modelo del agente TechSupport S.A.
+# Pesos: Qwen3.5-4B cuantizado por nosotros a Q4_K_M con llama.cpp.
+# Las directivas RENDERER y PARSER vienen del modelfile oficial de Ollama
+# (obtenidas con: ollama show --modelfile qwen3.5:4b). Son críticas para que
+# el modelo pueda interpretar y generar tool_calls (uso de herramientas).
+
+FROM ./qwen3.5-4b_q4_k_m.gguf
+
+TEMPLATE {{ .Prompt }}
+RENDERER qwen3.5
+PARSER qwen3.5
+
+# Temperatura baja: necesitamos un agente determinista, no un chatbot creativo.
+PARAMETER temperature 0.1
+PARAMETER top_k 20
+PARAMETER top_p 0.9
+
+# Ventana de contexto reducida para acelerar en CPU (suficiente para la demo)
+PARAMETER num_ctx 4096
+
+# Aprovechar los 8 núcleos físicos del Ryzen 7 5700U
+PARAMETER num_thread 8
+PARAMETER num_batch 256
+
+# Pequeña penalización a la repetición para que no se trabe
+PARAMETER repeat_penalty 1.05

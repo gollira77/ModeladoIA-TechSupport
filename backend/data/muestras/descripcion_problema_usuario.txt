@@ -1,0 +1,4 @@
+Hola, les escribo desde Atención al Cliente.
+Desde hoy a la mañana el portal de clientes tarda muchísimo y a veces muestra "Error 500".
+Tres clientes llamaron para quejarse porque no pueden descargar sus facturas.
+Probamos desde dos computadoras distintas y pasa lo mismo.

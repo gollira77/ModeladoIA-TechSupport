@@ -1,0 +1,5 @@
+2026-11-06 02:00:00 INFO  Backup job 'FS01-Diario' iniciado
+2026-11-06 02:00:03 INFO  Conectando a destino NAS-02 con usuario=svc_backup password=Bkp#2026!Seguro
+2026-11-06 02:14:51 ERROR Backup job failed: insufficient space on target (NAS-02, 99% usado)
+2026-11-06 02:14:51 ERROR Archivos pendientes: 18.452 (412 GB)
+2026-11-06 02:14:52 INFO  Notificación enviada. api_key=sk-test4f8a9b2c7d1e6f3a0b9c8d7e
