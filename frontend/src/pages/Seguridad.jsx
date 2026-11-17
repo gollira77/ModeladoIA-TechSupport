@@ -28,7 +28,7 @@ export default function Seguridad() {
   const altas = eventos.filter((e) => e.severidad === 'alta').length
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8 2xl:max-w-[100rem] 2xl:px-12">
       <h1 className="titulo-pagina">Seguridad y derivaciones</h1>
       <p className="mt-1 max-w-2xl text-sm text-acero-500">
         Registro de lo que las barreras de seguridad detectaron y de las consultas que el asistente derivó a una

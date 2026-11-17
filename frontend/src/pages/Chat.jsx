@@ -208,7 +208,7 @@ export default function Chat() {
 
         <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-8">
           {mensajes.length === 0 ? (
-            <div className="mx-auto mt-6 max-w-xl">
+            <div className="mx-auto mt-6 max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
               <h2 className="text-2xl font-semibold text-acero">Hola, {usuario.nombre.split(' ')[0]}.</h2>
               <p className="mt-2 text-acero-500">
                 Contame qué está fallando como se lo dirías a un compañero. Podés arrastrar capturas, fotos del equipo
@@ -223,7 +223,7 @@ export default function Chat() {
               </div>
             </div>
           ) : (
-            <div className="mx-auto max-w-3xl space-y-5">
+            <div className="mx-auto max-w-3xl space-y-5 xl:max-w-4xl 2xl:max-w-5xl">
               {mensajes.map((m, i) => m.rol === 'usuario' ? (
                 <div key={i} className="flex flex-col items-end">
                   <div className="max-w-[85%] whitespace-pre-wrap rounded-lg rounded-br-sm bg-acero px-4 py-2.5 text-sm text-white">{m.texto}</div>
@@ -253,7 +253,7 @@ export default function Chat() {
         </div>
 
         <form onSubmit={(e) => { e.preventDefault(); enviar() }} className="border-t border-niebla-300 bg-white px-4 py-3 sm:px-8">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-3xl xl:max-w-4xl 2xl:max-w-5xl">
             {adjuntos.length > 0 && (
               <div className="mb-2 flex flex-wrap gap-2">
                 {adjuntos.map((a, i) => <ChipAdjunto key={a.id || a.tmp} a={a} onQuitar={() => setAdjuntos((x) => x.filter((_, j) => j !== i))} />)}
@@ -281,7 +281,7 @@ export default function Chat() {
         </form>
       </section>
 
-      <aside className="hidden w-80 shrink-0 overflow-y-auto border-l border-niebla-300 bg-niebla px-5 py-5 lg:block xl:w-96">
+      <aside className="hidden w-80 shrink-0 overflow-y-auto border-l border-niebla-300 bg-niebla px-5 py-5 lg:block xl:w-96 2xl:w-[26rem]">
         <h2 className="text-sm font-semibold text-acero">Traza del agente</h2>
         <p className="mb-4 text-xs text-acero-500">Herramientas que decidió usar en el mensaje seleccionado</p>
         <Traza pasos={pasosVisibles?.pasos} activo={pasosVisibles?.activo} />

@@ -46,7 +46,7 @@ export default function Resumen() {
   const maxCruce = Math.max(1, ...Object.values(r.categoria_x_prioridad).flatMap((x) => Object.values(x)))
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8 2xl:max-w-[100rem] 2xl:px-12">
       <div className="flex flex-wrap items-end justify-between gap-4">
         <div>
           <h1 className="titulo-pagina">Resumen de incidencias</h1>

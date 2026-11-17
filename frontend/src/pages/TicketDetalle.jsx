@@ -76,7 +76,7 @@ export default function TicketDetalle() {
   const cerrado = t.estado === 'Cerrado'
 
   return (
-    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8">
+    <div className="mx-auto max-w-7xl px-4 py-8 sm:px-8 2xl:max-w-[100rem] 2xl:px-12">
       <Link to="/tickets" className="text-sm text-acero-500 hover:text-acero">‹ Tickets</Link>
       <div className="mt-3 flex flex-wrap items-start justify-between gap-4">
         <div className="min-w-0">
